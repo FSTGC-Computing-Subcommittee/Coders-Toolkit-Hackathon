@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oxygen&display=swap');
 
 :root {
 	--computing: #074687;
@@ -125,11 +125,33 @@ main {
 	background-image: url("../assets/section_background.svg");
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 125%;
+	background-size: 135%;
 	padding: 10% 0;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+}
+
+main p, main ul{
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+
+/*tablets*/
+@media only screen and (max-width: 768px) {
+    :root {
+		font-size: 14px;
+    }
+    
+    #hero h1 {
+		font-size: 5em;
+	}
+
+	main {
+		background-size: cover;
+		padding: 40% 0;
+    }
 }
 
 /* phones */
@@ -150,20 +172,7 @@ main {
     #hero img {
         max-width: 65%;
     }
-}
-
-/*tablets*/
-@media only screen and (max-width: 768px) {
-    :root {
-		font-size: 14px;
-    }
-    
-    #hero h1 {
-		font-size: 5em;
-	}
-
-	main {
-		background-size: cover;
-		padding: 40% 0;
+    nav{
+        font-size: 1em;
     }
 }
