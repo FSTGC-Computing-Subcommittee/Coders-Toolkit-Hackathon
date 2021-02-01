@@ -77,8 +77,7 @@ h1#event-title {
 .scenario {
 }
 
-.prizes {
-}
+
 
 .criteria {
 }
@@ -86,14 +85,13 @@ h1#event-title {
 .bonus {
 }
 
-.banner {
-}
 
 nav {
 	position: sticky;
 	font-size: 1.3em;
     border-bottom: var(--shadow) 5px solid;
     top:0;
+    background-color: white;
 }
 
 nav ul {
@@ -111,4 +109,12 @@ nav ul a {
 
 a {
 	text-decoration: none;
+}
+
+main > section{
+padding: 3em;
+}
+
+main > section:nth-child(2n+1){
+    background-color:#73D9EA;
 }
