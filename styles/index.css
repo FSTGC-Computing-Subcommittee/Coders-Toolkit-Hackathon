@@ -2,20 +2,25 @@
 
 :root {
 	--computing: #074687;
-    --shadow: #2a5a6f;
-    --link:#9AF2FA;
+	--shadow: #2a5a6f;
+	--link: #9af2fa;
 	font-size: 18px;
 }
 
 html {
 	scroll-behavior: smooth;
 }
+
 * {
 	margin: auto;
 	box-sizing: border-box;
 	font-family: "Lato", sans-serif;
 }
 
+ul,
+p {
+	font-size: 1em;
+}
 #hero {
 	background-color: var(--computing);
 	display: flex;
@@ -80,25 +85,26 @@ h1#event-title {
 }
 
 #criteria-breakdown {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 3.5em 0;
-    width: 100%;
-    text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 3.5em 0;
+	width: 100%;
+	text-align: center;
 }
 
-#criteria-breakdown *{
-    width: 70%;
+#criteria-breakdown * {
+	width: 70%;
 }
 
-#criteria-breakdown  h2{
-    margin-top: 1em;
+#criteria-breakdown h2 {
+	margin-top: 1em;
 }
 
 #submission a:hover {
 	color: #c4c4c4c4;
 }
+
 
 nav {
 	position: sticky;
@@ -128,8 +134,8 @@ nav a:hover {
 }
 
 a {
-    text-decoration: none;
-    color: var(--link);
+	text-decoration: none;
+	color: var(--link);
 }
 
 main > section {
@@ -143,7 +149,6 @@ main > section h1 {
 	font-size: 3em;
 	margin-bottom: 0.7em;
 }
-
 
 main > section h2 {
 	font-size: 1.7em;
@@ -159,16 +164,16 @@ main > section .emphasis {
 
 main > section ul {
 	margin: 0.7em 0;
-    font-size: 1.2em;
+	font-size: 1.2em;
 }
 
-main > section li{
+main > section li {
 	margin: 0.7em 0;
 }
 
-main > section p{
-    font-size: 1.2em;
-    margin-bottom: 0.7em;
+main > section p {
+	font-size: 1.2em;
+	margin-bottom: 0.7em;
 }
 
 main {
