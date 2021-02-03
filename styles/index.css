@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oxygen&display=swap");
 
 :root {
-  --computing: #074687;
-  --computing-hover: #2571bd;
+	--computing: #074687;
   --shadow: #2a5a6f;
-  font-size: 16px;
+  --computing-hover: #2571bd;
+	font-size: 18px;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 
 ul,
 p {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 #hero {
   background-color: var(--computing);
@@ -42,13 +42,13 @@ p {
 }
 
 #hero h1 {
-  font-weight: 900;
-  color: white;
-  font-size: 7em;
-  padding: 0;
-  margin: 0;
-  text-shadow: var(--shadow) -0.07em 0;
-  display: inline-block;
+	font-weight: 900;
+	color: white;
+	font-size: 7em;
+	padding: 0;
+	margin: 0;
+	text-shadow: var(--shadow) -0.06em 0;
+	display: inline-block;
 }
 
 #greater-than {
@@ -84,7 +84,6 @@ h1#event-title {
 }
 
 #scenario p {
-  font-size: 1.1em;
   margin: 1em 0;
   width: 80%;
 }
@@ -116,11 +115,11 @@ h1#event-title {
   color: #c4c4c4c4;
 }
 nav {
-  position: sticky;
-  font-size: 1.3em;
-  border-bottom: var(--shadow) 5px solid;
-  top: 0;
-  background-color: white;
+	position: sticky;
+	font-size: 1.15em;
+	border-bottom: var(--shadow) 5px solid;
+	top: 0;
+	background-color: white;
 }
 
 nav ul {
@@ -153,8 +152,8 @@ main > section {
 }
 
 main > section h1 {
-  font-size: 4em;
-  margin-bottom: 0.7em;
+	font-size: 3em;
+	margin-bottom: 0.7em;
 }
 
 main {

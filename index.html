@@ -1,136 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coder's Toolkit Hackathon</title>
-    <link rel="stylesheet" href="styles/index.css" />
-    <script src="scripts/index.js" defer></script>
-  </head>
 
-  <body>
-    <div id="hero">
-      <img
-        src="assets/Coder's_Toolkit_transparent_short.png"
-        alt="Coder's Toolkit"
-        id="hero-img"
-      />
-      <div>
-        <h1 id="greater-than">&gt</h1>
-        <h1 id="event-title">HACKATHON</h1>
-        <h1 id="less-than">&lt</h1>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coder's Toolkit Hackathon</title>
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <div id="hero">
+    <img src="assets/Coder's_Toolkit_transparent_short.png" alt="Coder's Toolkit" id="hero-img" />
+    <div>
+      <h1 id="greater-than">&gt</h1>
+      <h1 id="event-title">HACKATHON</h1>
+      <h1 id="less-than">&lt</h1>
     </div>
-    <section>
-      <nav>
+  </div>
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#scenario">SCENARIO</a></li>
+        <li>|</li>
+        <li><a href="#constraints">CONSTRAINTS</a></li>
+        <li>|</li>
+        <li><a href="#criteria">JUDGING CRITERIA</a></li>
+        <li>|</li>
+        <li><a href="#bonus">BONUS</a></li>
+        <li>|</li>
+        <li><a href="#submission">SUBMISSION</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="scenario">
+        <h1>Scenario</h1>
+        <h3>Problem Overview</h3>
+        <p>
+          Sahsa owns a restaurant known as Kruger Cuisine, which is famous for its high-quality steak meals and
+          excellent customer service, however, due to the onset of the pandemic, regular operations have been severely
+          disrupted, primarily due to most of the business operations being offline.
+        </p>
+        <h3>Detailed Breakdown</h3>
+        <p>
+          The restaurant is open from Monday through Saturday from 8:00 am to 12:00 am. The chefs and waiters usually
+          work two shifts:
+        </p>
         <ul>
-          <li><a href="#scenario">SCENARIO</a></li>
-          <li>|</li>
-          <li><a href="#constraints">CONSTRAINTS</a></li>
-          <li>|</li>
-          <li><a href="#criteria">JUDGING CRITERIA</a></li>
-          <li>|</li>
-          <li><a href="#bonus">BONUS</a></li>
-          <li>|</li>
-          <li><a href="#submission">SUBMISSION</a></li>
+          <li>A morning shift from 9:00 am to 5:00 pm</li>
+          <li>A night shift from 5:00 pm to 12:00 am</li>
         </ul>
-      </nav>
-      <main>
-        <section id="scenario">
-          <h1>Scenario</h1>
-          <p>
-            Tina owns a restaurant called Kruger Cuisine, that's famous for its
-            high quality steak meals.
-          </p>
-          <p>
-            The restaurant is open from Monday through Saturday from 8:00am to
-            8:00pm. The chefs and waiters work on shifts - a morning shift from
-            9:00am to 1:00pm and a night shift from 1:00pm to 8:00pm.
-          </p>
-          <p>
-            If a customer wishes to dine at the restaurant, they must call and
-            make a reservation or they will have to wait until either someone
-            misses their reservation or to wait for a free time slot after they
-            arrive.
-          </p>
-          <p>
-            Once they are seated, a waiter or waitress will give them a menu to
-            order from. They would then pay for what you ordered after receiving
-            their meal.
-          </p>
-          <p>
-            However, with the onset of the pandemic, regular operations have
-            been disrupted.
-          </p>
-          <p class="call-to-action">
-            Tina must find a a way to keep her restaurant afloat, can you find a
-            solution for her?
-          </p>
-        </section>
-        <section id="constraints">
-          <h1>Constraints</h1>
-          <ul>
-            <li>You have 3 hours to formulate and complete your solution</li>
-            <li>You must work in teams of 2-6 persons.</li>
-            <li>
-              Submissions will only be accepted through source control(i.e
-              Github, BitBucket)
-            </li>
-          </ul>
-        </section>
-        <section id="criteria">
-          <h1>Judging Criteria</h1>
-          <p>All submissions will be judged based on the following:</p>
+        <p>
+          However, workers usually are notified of changes in their shifts before they clock out for the day or via the
+          phone, which often leads to some being confused on what shift they should actually work on.
+        </p>
+        <p>
+          Moreover, if a customer wishes to dine at the restaurant they would have to call to book their reservation or
+          wait until a slot frees up due to someone missing their reservation or until someone's reservation period has
+          ended.
+        </p>
+        <p>
+          Lastly, due to most of the business operations being offline, customers would have to either call the
+          restaurant or visit physically to know what meals are available on the menu for the week.
+        </p>
+        <p class="call-to-action">
+          So Sahsa must find a way to keep her restaurant afloat, can you find a solution for her?
+        </p>
+      </section>
+      <section id="constraints">
+        <h1>Constraints</h1>
+        <ul>
+          <li>You have 3 hours to formulate and complete your solution</li>
+          <li>You must work in teams of 2-6 persons.</li>
+          <li>
+            Submissions will only be accepted through source control(i.e
+            Github, BitBucket)
+          </li>
+        </ul>
+      </section>
+      <section id="criteria">
+        <h1>Judging Criteria</h1>
+        <p>All submissions will be judged based on the following:</p>
 
-          <ul>
-            <li>Usability</li>
-            <li>Reliability</li>
-            <li>Creativity</li>
-            <li>Completeness</li>
-          </ul>
+        <ul>
+          <li>Usability</li>
+          <li>Reliability</li>
+          <li>Creativity</li>
+          <li>Completeness</li>
+        </ul>
+        <p>
+          You can get a maximum of 10 points for each criterion for a total of
+          40 points.
+        </p>
+        <section id="criteria-breakdown">
+          <h2>Usability</h2>
           <p>
-            You can get a maximum of 10 points for each criterion for a total of
-            40 points.
+            The solution should be easy to use and easy to learn how to use.
           </p>
-          <section id="criteria-breakdown">
-            <h2>Usability</h2>
-            <p>
-              The solution should be easy to use and easy to learn how to use.
-            </p>
-            <h2>Reliability</h2>
-            <p>
-              The solution should perform consistently. Try to keep bugs or
-              erros to a minimum.
-            </p>
-            <h2>Creativity</h2>
-            <p>The solution should be innovative.</p>
-            <h2>Completeness</h2>
-            <p>
-              The solution should solve all aspects of the problems in the
-              scenario.
-            </p>
-          </section>
-        </section>
-        <section id="bonus">
-          <h1>Bonus</h1>
-          <p>The following attract a bonus of 5 points each:</p>
-          <ul>
-            <li>
-              Using anything done in the Coder's Toolkit Workshops (Git, Linux,
-              AWS, Docker)
-            </li>
-            <li>Creating an object oriented solution</li>
-          </ul>
-        </section>
-        <section id="submission">
-          <h1>Submission</h1>
-          <!-- As soon as I publish the devpost site I'll add the link here-->
+          <h2>Reliability</h2>
           <p>
-            All submissions will be made on DevPost, the link can be found
-            <a href="">here</a>
+            The solution should perform consistently. Try to keep bugs or
+            erros to a minimum.
+          </p>
+          <h2>Creativity</h2>
+          <p>The solution should be innovative.</p>
+          <h2>Completeness</h2>
+          <p>
+            The solution should solve all aspects of the problems in the
+            scenario.
           </p>
         </section>
-      </main>
-    </section>
-  </body>
+      </section>
+      <section id="bonus">
+        <h1>Bonus</h1>
+        <p>The following attract a bonus of 5 points each:</p>
+        <ul>
+          <li>
+            Using anything done in the Coder's Toolkit Workshops (Git, Linux,
+            AWS, Docker)
+          </li>
+          <li>Creating an object oriented solution</li>
+        </ul>
+      </section>
+      <section id="submission">
+        <h1>Submission</h1>
+        <!-- As soon as I publish the devpost site I'll add the link here-->
+        <p>
+          The link to submit your project will open on February 3rd at 7pm.
+        </p>
+        <p>
+          All submissions will be made on DevPost, the link can be found
+          <a href="https://coders-toolkit-hackathon.devpost.com/">here</a>
+        </p>
+      </section>
+    </main>
+  </section>
+</body>
+
 </html>
