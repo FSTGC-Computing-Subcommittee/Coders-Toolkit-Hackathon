@@ -1,36 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oxygen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Oxygen&display=swap");
 
 :root {
 	--computing: #074687;
-	--shadow: #2a5a6f;
+  --shadow: #2a5a6f;
+  --computing-hover: #2571bd;
 	font-size: 18px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 * {
-	margin: auto;
-	box-sizing: border-box;
-	font-family: "Lato", sans-serif;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 
+ul,
+p {
+  font-size: 1em;
+}
 #hero {
-	background-color: var(--computing);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100vh;
-	flex-direction: column;
+  background-color: var(--computing);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
 }
 
 #hero img {
-	margin: 0;
-	max-width: 55%;
-	height: auto;
-	object-fit: contain;
+  margin: 0;
+  max-width: 55%;
+  height: auto;
+  object-fit: contain;
 }
 
 #hero div {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #hero h1 {
@@ -44,46 +52,68 @@
 }
 
 #greater-than {
-	animation-name: pulse-left;
-	animation-timing-function: ease-out;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  animation-name: pulse-left;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes pulse-left {
-	to {
-		transform: translate(60%, 0);
-	}
+  to {
+    transform: translate(60%, 0);
+  }
 }
 
 #less-than {
-	animation-name: pulse-right;
-	animation-timing-function: ease-out;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+  animation-name: pulse-right;
+  animation-timing-function: ease-out;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 @keyframes pulse-right {
-	to {
-		transform: translate(-60%, 0);
-	}
+  to {
+    transform: translate(-60%, 0);
+  }
 }
 
 h1#event-title {
-	margin: 0 0.5em;
+  margin: 0 0.5em;
 }
 
-#scenario {
+#scenario p {
+  margin: 1em 0;
+  width: 80%;
+}
+#constraints li {
+  margin: 1em 0;
 }
 
+#criteria ul,
+#bonus ul {
+  margin: 0.5em 0;
+}
+#criteria-breakdown {
+  margin: 1em 0;
+}
+#criteria-breakdown h2 {
+  font-size: 1.7em;
+  margin: 0.4em 0;
+}
 #criteria {
 }
 
 #bonus {
 }
 
+#submission a {
+  color: white;
+}
+#submission a:hover {
+  color: #c4c4c4c4;
+}
 nav {
 	position: sticky;
 	font-size: 1.15em;
@@ -93,28 +123,32 @@ nav {
 }
 
 nav ul {
-	display: flex;
-	justify-content: space-around;
-	height: 3em;
-	padding: 0;
-	list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 3em;
+  padding: 0;
+  list-style-type: none;
 }
 
-nav ul a, nav {
-	color: var(--computing);
-    font-weight: 700;
-    text-align: center;
+nav ul a,
+nav {
+  color: var(--computing);
+  font-weight: 700;
+  text-align: center;
 }
 
+nav a:hover {
+  color: var(--computing-hover);
+}
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 main > section {
-	padding: 3em;
-	min-height: 100vh;
-	width: 80%;
-	color: white;
+  padding: 3em;
+  min-height: 100vh;
+  width: 80%;
+  color: white;
 }
 
 main > section h1 {
@@ -123,53 +157,54 @@ main > section h1 {
 }
 
 main {
-	background-image: url("../assets/section_background.svg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	padding: 10% 0;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
+  background-image: url("../assets/section_background.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-main p, main ul{
-    font-family: 'Oxygen', sans-serif;
+main p,
+main ul {
+  font-family: "Oxygen", sans-serif;
 }
 
 /*tablets*/
 @media only screen and (max-width: 768px) {
-    :root {
-		font-size: 14px;
-    }
-    
-    #hero h1 {
-		font-size: 5em;
-	}
+  :root {
+    font-size: 14px;
+  }
 
-	main {
-		padding: 40% 0;
-    }
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  main {
+    padding: 40% 0;
+  }
 }
 
 /* phones */
 @media only screen and (max-width: 425px) {
-	:root {
-		font-size: 12px;
-	}
+  :root {
+    font-size: 12px;
+  }
 
-	#hero h1 {
-		font-size: 3em;
-	}
+  #hero h1 {
+    font-size: 3em;
+  }
 
-	main {
-		padding: 40% 0;
-    }
-    
-    #hero img {
-        max-width: 65%;
-    }
-    nav{
-        font-size: 0.8em;
-    }
+  main {
+    padding: 40% 0;
+  }
+
+  #hero img {
+    max-width: 65%;
+  }
+  nav {
+    font-size: 0.8em;
+  }
 }
